@@ -4,7 +4,9 @@ class CoursesController < ApplicationController
   end
 
   def show
-    @course = Course.find(params[:id])
+    @section = Section.new
+    @lesson = Lesson.new
+    # @course = Course.find(params[:id])
   end
 
   # def image
